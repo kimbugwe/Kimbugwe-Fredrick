@@ -101,3 +101,10 @@ nav.navbar.navbar-default ul.nav > li > a {
 .header-social-icon a {
     color: #00092b !important;
 }
+
+nav.navbar.bootsnav li.dropdown .mega-menu-full {
+    background-color: #00092b;
+}
+nav.navbar.bootsnav li.dropdown .menu-back-div > ul {
+    background-color: #00092b;
+}

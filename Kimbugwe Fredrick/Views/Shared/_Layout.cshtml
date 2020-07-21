@@ -8,11 +8,11 @@
     <!-- description -->
     <meta name="description" content="Kimbugwe Fredrick is a freelance photographer,filmaker and Graphics Designer based in Kampala Uganda, with expertise in Live events;Conferences, Concerts, Runways, Sports, Weddings, Parties name it I cover it. Also if you need graphics design for your brand endevors don't hesitate.">
     <!-- keywords -->
-    <meta name="keywords" content="Creative, photographer in Uganda, filmmaker, Graphics Designer, Website designer, Product photographer,Kimbugwe Fredrick,">
-    
+    <meta name="keywords" content="Creative, photographer in Uganda, filmmaker, Graphics Designer, Website designer, Product photographer,Kimbugwe Fredrick,conference photography,Sports,Wedding,introduction ceremonies,corporate parties,Corporate events">
+
     <!-- favicon -->
     <link rel="shortcut icon" href="~/images/favicon.png">
-    <title>Kimbugwe Fredrick - @ViewData["Title"] </title> 
+    <title>Kimbugwe Fredrick - @ViewData["Title"] </title>
     <!-- animation -->
     <link rel="stylesheet" href="~/css/animate.css">
     <!-- bootstrap -->
@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="~/revolution/css/settings.css" media="screen">
     <link rel="stylesheet" type="text/css" href="~/revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="~/revolution/css/navigation.css">
+    <link rel="stylesheet" href="~/revolution-slider/revolution-addons/polyfold/css/revolution.addon.polyfold.css">
     <!-- bootsnav -->
     <link rel="stylesheet" href="~/css/bootsnav.css">
     <!-- style -->
@@ -54,8 +55,8 @@
                     <!-- start logo -->
                     <div class="col-auto pl-lg-0 order-xs-last">
                         <a href="/Home" title="Kimbugwe Fredrick" class="logo"><img src="~/images/logo.png" data-rjs="images/logo@2x.png" class="logo-dark default" alt="Pofo"></a>
-                       </div>
-       
+                    </div>
+
                     <!-- end logo -->
                     <div class="col accordion-menu pr-md-3 order-xs-first">
                         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-collapse-toggle-1">
@@ -68,7 +69,7 @@
                             <ul id="accordion" class="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
                                 <!-- start menu item -->
                                 <li class="dropdown megamenu-fw">
-                                    <a href="#">Portifolio</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                    <a href="/Home">Portifolio</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                     <!-- start sub menu -->
                                     <div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full">
                                         <ul>
@@ -80,10 +81,6 @@
                                                     <li><a href="home-classic-corporate.html">Classic corporate</a></li>
                                                     <li><a href="home-classic-digital-agency.html">Classic digital agency</a></li>
                                                     <li><a href="home-classic-innovation-agency.html">Classic innovation agency</a></li>
-                                                    <li><a href="home-classic-web-agency.html">Classic web agency</a></li>
-                                                    <li><a href="home-classic-one-page.html">Classic one page</a></li>
-                                                    <li><a href="home-classic-start-up.html">Classic start-up</a></li>
-                                                    <li><a href="home-classic-interactive-agency.html">Classic interactive agency</a></li>
                                                 </ul>
                                                 <!-- end sub menu item  -->
                                             </li>
@@ -96,11 +93,6 @@
                                                     <li><a href="home-creative-studio.html">Creative studio</a></li>
                                                     <li><a href="home-creative-business.html">Creative business</a></li>
                                                     <li><a href="home-creative-simple-portfolio.html">Creative simple portfolio</a></li>
-                                                    <li><a href="home-creative-branding-agency.html">Creative branding agency</a></li>
-                                                    <li class="menu-new"><a href="home-creative-minimalist-portfolio.html">creative minimalist portfolio</a></li>
-                                                    <li><a href="home-creative-small-business.html">Creative small business</a></li>
-                                                    <li><a href="home-creative-designer.html">Creative designer</a></li>
-                                                    <li><a href="home-creative-agency.html">Creative agency</a></li>
                                                 </ul>
                                                 <!-- end sub menu item  -->
                                             </li>
@@ -113,11 +105,6 @@
                                                     <li><a href="home-portfolio-minimal.html">Portfolio minimal</a></li>
                                                     <li><a href="home-portfolio-multiple-carousel.html">Portfolio multiple carousel</a></li>
                                                     <li><a href="home-portfolio-centered-slides.html">Portfolio centered slides</a></li>
-                                                    <li><a href="home-portfolio-personal.html">Portfolio personal</a></li>
-                                                    <li><a href="home-portfolio-metro.html">Portfolio metro</a></li>
-                                                    <li><a href="home-portfolio-full-screen-vertical.html">Portfolio full screen – vertical</a></li>
-                                                    <li><a href="home-portfolio-photographer.html">Portfolio photographer</a></li>
-                                                    <li><a href="home-portfolio-parallax.html">Portfolio parallax</a></li>
                                                 </ul>
                                                 <!-- end sub menu item  -->
                                             </li>
@@ -130,7 +117,6 @@
                                                     <li><a href="home-blog-grid.html">Blog grid</a></li>
                                                     <li><a href="home-blog-masonry.html">Blog masonry</a></li>
                                                     <li><a href="home-blog-clean.html">Blog clean</a></li>
-                                                    <li><a href="home-blog-personal.html">Blog personal</a></li>
                                                 </ul>
                                                 <!-- end sub menu item  -->
                                             </li>
@@ -146,10 +132,7 @@
                                     <a href="/Home/Blogs">Blog</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#">Order a Print</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Contact</a>
+                                    <a href="/Home/Contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -225,16 +208,17 @@
     <!-- revolution -->
     <script type="text/javascript" src="~/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="~/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
-    <!--<script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="~/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+    <script src="~/revolution-slider/revolution-addons/polyfold/js/revolution.addon.polyfold.min.js"></script>
+
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
     <!-- setting -->
     <script type="text/javascript" src="~/js/main.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
