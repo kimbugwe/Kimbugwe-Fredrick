@@ -10,3 +10,7 @@ $(window).scroll(function () {
         $('.header-light').removeClass('navbar-fixed-top');
     }
 });
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}

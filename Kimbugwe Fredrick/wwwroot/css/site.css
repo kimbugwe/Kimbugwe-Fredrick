@@ -87,6 +87,9 @@ nav.navbar.navbar-default ul.nav > li > a {
                            }
 
 }
+.slider-text-middle-main {
+    padding: 1rem 0;
+}
 
 .bg-black, .background-black {
     background-color: #00092b;
@@ -107,4 +110,21 @@ nav.navbar.bootsnav li.dropdown .mega-menu-full {
 }
 nav.navbar.bootsnav li.dropdown .menu-back-div > ul {
     background-color: #00092b;
+}
+
+.down-section {
+    bottom: 2em !important;
+}
+
+body.mfp-zoom-out-cur{
+    top:80px
+}
+    .mfp-fade.mfp-bg.mfp-ready {
+        top: 85px;
+    }
+    .mfp-wrap {
+        top: 85px;
+    }
+.mfp-bg {
+    background: #00092b;
 }
