@@ -128,3 +128,7 @@ body.mfp-zoom-out-cur{
 .mfp-bg {
     background: #00092b;
 }
+body {
+    font-family: 'Philosopher', sans-serif !important;
+    font-size:16px;
+}
