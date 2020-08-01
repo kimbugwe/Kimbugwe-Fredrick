@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.css">
     <!-- et line icon -->
     <link rel="stylesheet" href="~/css/et-line-icons.css">
+    <link rel="stylesheet" href="~/icon-line-pro/style.css">
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="~/css/font-awesome.min.css">
     <!-- themify icon -->
@@ -49,7 +50,7 @@
 <body>
     <div class="width-100">
         <!-- start header -->
-        <header>
+        <header class="sticky"]->
             <!-- start navigation -->
             <nav class="navbar navbar-default bootsnav header-light background-white navbar-expand-lg">
                 <div class="container nav-header-container">
@@ -73,7 +74,7 @@
                                     <a href="/Home">Portifolio</a><i class="fas fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                     <div class="menu-back-div dropdown-menu megamenu-content mega-menu collapse mega-menu-full">
                                         <ul>
-                                            <li class="mega-menu-column col-lg-3">
+                                            <li class="mega-menu-column col-lg-3 bg-transparent">
                                                 <ul>
                                                     <li class="dropdown-header">Classic Homepages</li>
                                                     <li><a href="home-classic-corporate.html">Classic corporate</a></li>
@@ -82,7 +83,7 @@
                                                 </ul>
                                             </li>
 
-                                            <li class="mega-menu-column col-lg-3">
+                                            <li class="mega-menu-column col-lg-3 bg-transparent">
                                                 <ul>
                                                     <li class="dropdown-header">Creative Homepages</li>
                                                     <li><a href="home-creative-studio.html">Creative studio</a></li>
@@ -90,7 +91,7 @@
                                                     <li><a href="home-creative-simple-portfolio.html">Creative simple portfolio</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="mega-menu-column col-lg-3">
+                                            <li class="mega-menu-column col-lg-3 bg-transparent">
                                                 <ul>
                                                     <li class="dropdown-header">Portfolio Homepages</li>
                                                     <li><a href="home-portfolio-minimal.html">Portfolio minimal</a></li>
@@ -98,7 +99,7 @@
                                                     <li><a href="home-portfolio-centered-slides.html">Portfolio centered slides</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="mega-menu-column col-lg-3">
+                                            <li class="mega-menu-column col-lg-3 bg-transparent">
                                                 <ul>
                                                     <li class="dropdown-header">Blog Homepages</li>
                                                     <li><a href="home-blog-grid.html">Blog grid</a></li>
@@ -131,7 +132,7 @@
             </nav>
             <!-- end navigation -->
         </header>
-        <main role="main">
+        <main role="main" class="js-animsition-overlay" data-animsition-overlay="true">
             @RenderBody()
             <footer>
                 <div class="container">

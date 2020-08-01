@@ -4869,6 +4869,9 @@
     nav.navbar.navbar-default ul.nav > li > a {
         padding: 20px 10px !important;
     }
+    nav.navbar.bootsnav .navbar-nav {
+     background-color: rgba(0, 9, 43, 0.9) !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -4939,5 +4942,20 @@
         width: auto;
         max-width: 100%;
     }
+    }
+@media (min-width: 0) {
+    .g-py-15 {
+        padding-top: 1.07143rem !important;
+        padding-bottom: 1.07143rem !important;
+    }
+    .u-block-hover [class*="icon-"] {
+        padding: 1px;
+    }
+}
+@media (max-width: 991px) {
+    nav.navbar.bootsnav .navbar-nav {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(23, 23, 23, 0.95);
     }
 }

@@ -106,10 +106,10 @@ nav.navbar.navbar-default ul.nav > li > a {
 }
 
 nav.navbar.bootsnav li.dropdown .mega-menu-full {
-    background-color: #00092b;
+    background-color: rgba(0, 9, 43, 0.9) !important;
 }
 nav.navbar.bootsnav li.dropdown .menu-back-div > ul {
-    background-color: #00092b;
+    background:transparent !important;
 }
 
 .down-section {
