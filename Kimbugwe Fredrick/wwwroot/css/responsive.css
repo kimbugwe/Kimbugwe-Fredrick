@@ -4890,6 +4890,12 @@
     .g-hidden-xl-up {
         display: none !important;
     }
+    .container-fluid{
+        max-width:1366px;
+    }
+    .container {
+        max-width: 1366px;
+    }
 }
 
 .g-hidden-xl-down {
