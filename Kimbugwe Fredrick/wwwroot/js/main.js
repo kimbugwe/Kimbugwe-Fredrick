@@ -2710,3 +2710,11 @@ tpj(document).ready(function () {
 });
 
 
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 5) {
+        $('.navbar-expand-lg').addClass('navbar-fixed-top');
+    }
+    else {
+        $('.navbar-expand-lg').removeClass('navbar-fixed-top');
+    }
+});
